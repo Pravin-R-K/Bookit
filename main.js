@@ -2,6 +2,8 @@ function handleSubmit() {
     event.preventDefault();
     let userName = document.getElementById("username");
     let password = document.getElementById("password");
+    let eMail = document.getElementById("email");
+
 
     if (!checkString(userName.value)) {
         setError(userName, "Username must be atleast 8 characters.");
@@ -12,6 +14,11 @@ function handleSubmit() {
         setError(password, "Password must be atleast 8 characters.");
     } else {
         setSuccess(password);
+    }
+    if(!eMail.value.includes("@") || !eMail.value.includes(".")) {
+        setError(eMail, "Enter a valid email.");
+    } else {
+        setSuccess(eMail);
     }
 }
 
