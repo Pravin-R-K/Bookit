@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anta&family=Fredoka:wght@300..700&family=Jersey+25&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(0,191,255);
+    background: linear-gradient(0deg, rgba(0,191,255,1) 20%, rgba(178,34,34,1) 80%);
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.sContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#sForm {
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: firebrick;
+    padding: 15px;
+}
+
+#sForm button {
+    background-color: #00BFFF;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    margin: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sContent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.sContent input {
+    outline: none;
+    border: 2px solid #2cc1bc;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.sContent label {
+    font-size: 20px;
+}
+
+.sContent input {
+    outline: none;
+    border: 2px solid #2cc1bc;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.sContent input:focus {
+    border-color: black;
+}
+
+.sLast {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.sLast a:hover {
+    transition: 1s;
+    scale: 1.1;
+    color: firebrick;
+}
+
+.sContent .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sContent.success input {
+    border-color: #0cc477;
+}
+
+.sContent.error input {
+    border-color: #dc3545;
+}

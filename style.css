@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Anta&family=Fredoka:wght@300..700&family=Jersey+25&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+}
+
+span {
+    color: #00BFFF;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* ---------- NAVIGATION BAR ---------- */
+
+nav {
+    font-family: "Mukta", sans-serif;
+    height: 12vh;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navSearch {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 10px;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 10px;
+}
+
+.navSearch i {
+    font-size: 20px;
+}
+
+.navSearch input {
+    flex: 1;
+    height: 5vh;
+    padding: 5px 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.navBar3 {
+    height: 6vh;
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar3 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------- NAV-DROPDOWN BAR ---------- */
+
+.navList {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.navList a:hover {
+    color: #00BFFF;
+}
+
+.navStore {
+    position: relative;
+    display: inline-block;
+}
+
+.navDropdown a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.navDropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 12vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navDropdown a {
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+.navDropdown a:hover {
+    background-color: #231f20;
+}
+
+.navStore:hover .navDropdown{
+    display: block;
+}
+
+.navLog a:hover{
+    text-decoration: underline;
+    color: #00BFFF;
+}
+
+/* ---------- HOME PAGE ---------- */
+
+#home {
+    background-image: url(images/home-bg.jpg);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Mukta", sans-serif;
+}
+
+.homeContainer {
+    height: 85vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeContainer h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.homeContainer h3 {
+    color: palegoldenrod;
+    font-size: 30px;
+    padding: 5px 5px 5px 20px;
+}
+
+.homeContainer p {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 5px 5px 30px;
+}
+
+#home .subHead {
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
+/* ---------- STORE PAGE ---------- */
+
+#store {
+    background-image: url(images/store-bg.png);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "Mukta", sans-serif;
+}
+
+.storeContainer h2 {
+    color: #00BFFF;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.storeContainer h3 {
+    color: goldenrod;
+    font-size: 30px;
+    padding: 5px 5px 5px 20px;
+}
+
+.storeContainer p {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 5px 5px 30px;
+}
+
+#store .subHead {
+    color: firebrick;
+    text-decoration: underline;
+}
+
+/* ---------- CATEGORY PAGE ---------- */
+
+#category {
+    height: 195vh;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mukta", sans-serif;
+    color: black;
+}
+
+.categoryHead h2 {
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    color: #00BFFF;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 160vh;
+    width: 95vw;
+}
+
+.categoryInner {
+    height: 150vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryInner img {
+    border-radius: 15px;
+}
+
+.categoryInner img:hover {
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+}
+
+.categoryPart {
+    height: 100vh;
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryPart h3 {
+    color: firebrick;
+    font-size: 30px;
+}
+
+.categoryPart p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* ---------- NEW RELEASE PAGE ---------- */
+
+#newrelease {
+    font-family: "Mukta", sans-serif;
+    background-color: rgb(206, 236, 240);
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.nrContainer {
+    height: 125vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nrInner {
+    display: flex;
+    gap: vh;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.nrBooks {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    width: 45vw;
+    height: 60vh;
+}
+
+.nrImg img {
+    border-radius: 15px;
+}
+
+.nrImg img:hover {
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+}
+
+.nrHead h2 {
+    color: goldenrod;
+    text-decoration: underline;
+    font-size: 60px;
+    text-align: center;
+}
+
+.nrBooks h3 {
+    font-size: 30px;
+}
+
+.nrBooks h5 {
+    color: brown;
+    font-size: 20px;
+}
+
+/* ---------- DEALS & DISCOUNTS PAGE ---------- */
+
+#dandd {
+    height: 125vh;
+    background-image: url(images/dandd-bg.png);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Mukta", sans-serif;
+}
+
+.danddHead h2 {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: orange;
+    font-size: 60px;
+    text-align: center;
+}
+
+#dandd .danddContainer {
+    height: 70vh;
+}
+
+.danddContainer h4 {
+    text-decoration: underline;
+    color: firebrick;
+    font-size: 30px;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.danddContainer p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+.danddContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* ---------- ABOUT US PAGE ---------- */
+
+#about {
+    height: 125vh;
+    background-image: url(images/about-bg.png);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mukta", sans-serif;
+}
+
+.aboutHead h2 {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: firebrick;
+    font-size: 60px;
+    text-align: center;
+}
+
+.aboutContainer {
+    width: 75vw;
+    height: 60vh;
+}
+
+.aboutContainer h3 {
+    color: gold;
+    font-size: 30px;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.aboutContainer p {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+.aboutSub {
+    color: #00BFFF;
+    font-style: normal ;
+}
+
+/* ---------- CONTACT US PAGE ---------- */
+
+#contact {
+    font-family: "Mukta", sans-serif;
+    background-color: rgb(206, 236, 240);
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.conContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#form {
+    width: 40vw;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+#form:hover {
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    transition: 1s;
+}
+
+#form h2 {
+    font-size: 60px;
+    text-align: center;
+    color: orange;
+    padding: 15px;
+}
+
+#form button {
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    margin: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.inp label {
+    font-size: 20px;
+}
+
+.inp input {
+    font-family: "Mukta", sans-serif;
+    outline: none;
+    border: 2px solid #2cc1bc;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.inp input:focus {
+    border-color: goldenrod;
+}
+
+.inp textarea {
+    font-family: "Mukta", sans-serif;
+    border: 2px solid #2cc1bc;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: none;
+    height: 15vh;
+    width: 35vw;
+}
+
+.inp textarea:focus {
+    border-color: goldenrod;
+}
+
+.inp .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.inp.success input {
+    border-color: #0cc477;
+}
+
+.inp.error input {
+    border-color: #dc3545;
+}
+
+
